@@ -10,6 +10,7 @@ android {
     defaultConfig {
         applicationId "com.example.documentmedia"
         minSdk 28
+        //noinspection EditedTargetSdkVersion
         targetSdk 34
         versionCode 1
         versionName "1.0"
@@ -30,9 +31,31 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    buildFeatures {
+        viewBinding true
+        //noinspection DataBindingWithoutKapt
+        dataBinding true
+    }
 }
 
 dependencies {
+
+// to use gson
+    implementation 'com.google.code.gson:gson:2.10'
+    // below dependency for using retrofit.
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-simplexml:2.1.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.5.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.1'
+
+    implementation("androidx.media3:media3-exoplayer:1.2.0")
+    implementation("androidx.media3:media3-exoplayer-midi:1.2.0")
+    implementation("androidx.media3:media3-session:1.2.0")
+    implementation("androidx.preference:preference-ktx:1.2.1")
+    implementation("com.github.bumptech.glide:glide:4.15.1")
 
     implementation 'androidx.core:core-ktx:1.9.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
