@@ -41,6 +41,13 @@ android {
 
 dependencies {
 
+    implementation 'com.google.android.exoplayer:exoplayer:2.15.0'
+
+//    implementation "androidx.media3:media3-exoplayer:1.2.1"
+//    implementation "androidx.media3:media3-ui:1.2.1"
+//    implementation "androidx.media3:media3-common:1.2.1"
+//    implementation "androidx.media3:media3-session:1.2.1"
+
 // to use gson
     implementation 'com.google.code.gson:gson:2.10'
     // below dependency for using retrofit.
@@ -51,9 +58,7 @@ dependencies {
     implementation 'com.squareup.retrofit2:adapter-rxjava2:2.9.0'
     implementation 'com.squareup.okhttp3:logging-interceptor:4.9.1'
 
-    implementation("androidx.media3:media3-exoplayer:1.2.0")
-    implementation("androidx.media3:media3-exoplayer-midi:1.2.0")
-    implementation("androidx.media3:media3-session:1.2.0")
+
     implementation("androidx.preference:preference-ktx:1.2.1")
     implementation("com.github.bumptech.glide:glide:4.15.1")
 
