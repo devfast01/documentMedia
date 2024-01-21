@@ -41,8 +41,9 @@ android {
 
 dependencies {
 
-    implementation 'com.google.android.exoplayer:exoplayer:2.15.0'
-
+    implementation 'com.google.android.exoplayer:exoplayer:2.13.0'
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.13.0'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.13.0'
 //    implementation "androidx.media3:media3-exoplayer:1.2.1"
 //    implementation "androidx.media3:media3-ui:1.2.1"
 //    implementation "androidx.media3:media3-common:1.2.1"
@@ -66,6 +67,7 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.11.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.leanback:leanback:1.0.0'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
